@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Sedona &#124; Написать отзыв</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="main-header">
+      <nav class="main-nav nojs close-menu">
+        <div class="menu-wrapper ">
+          <button class="btn-close" type="button">
+            Закрыть меню
+            <svg width="23" height="22">
+              <use xlink:href="#icon-close-menu"></use>
+            </svg>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item ">
+              <a href="index.html" class="main-nav__link ">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html" class="main-nav__link">Фото и видео</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nav__link">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__logo">
+          <button class="btn-show" type="button">
+            Показать меню
+            <svg width="23" height="21">
+              <use xlink:href="#icon-open-menu"></use>
+            </svg>
+          </button>
+          <a href="index.html" class="main-nav__logo-link">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" type="image/svg+xml">
+              <source media="(min-width: 1200px)" type="image/png" srcset="img/logo-sedona-big.png">
+              <source media="(min-width: 320px)" srcset="img/logo-sedona-mobile.svg" type="image/svg+xml">
+              <img src="img/logo-sedona.png">
+            </picture>
+          </a>
+        </div>
+      </nav>
+      <div class="main-header__logo-wrapper main-header__logo-wrapper--inner">
+        <div class="main-header__logo-image main-header__logo-image--inner">
+          <img src="img/text-sedona.svg">
+        </div>
+      </div>
+    </header>
+    <main class="inner-content">
+      <div class="inner-top-block">
+        <h1 class="inner-page-title">Оставте свой отзыв</h1>
+        <p class="inner-page-text">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них,
+          <br> а также о посещенных вами достопримечательностях
+        </p>
+      </div>
+      <div class="form-wrapper">
+        <form class="write-comment-form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="introduce-myself">
+            <div class="legend-wrapper">
+              <h2 class="introduce-myself__title">Представтесь:</h2>
+            </div>
+            <p>
+              <span>
+                Имя
+                <sup>*</sup>:
+              </span>
+              <input type="text" name="" placeholder="Петр" id="">
+            </p>
+            <p>
+              <span>
+                Фамилия
+                <sup>*</sup>:
+              </span>
+              <input type="text" name="" placeholder="Иванов" id="">
+            </p>
+            <p>
+              <span>
+                Отчество:
+              </span>
+              <input type="text" name="" placeholder="Александрович" id="">
+            </p>
+          </div>
+          <div class="contacts">
+            <div class="legend-wrapper">
+              <h2 class="contacts__title">Контактная информация:</h2>
+            </div>
+            <p class="contacts-input-wrapper">
+              <span>
+                Телефон
+                <sup>*</sup>:
+              </span>
+              <label class="contacts__phone" for="phn">
+                <input type="tel" name="phone" placeholder="Введите телефон" id="phn">
+              </label>
+            </p>
+            <p class="contacts-input-wrapper">
+              <span>
+                Электронная почта
+                <sup>*</sup>:
+              </span>
+              <label class="contacts__email" for="eml">
+                <input type="email" name="email" placeholder="Введите e-mail" id="eml">
+              </label>
+            </p>
+          </div>
+          <div class="feeling">
+            <div class="legend-wrapper">
+              <h2 class="feeling__title">Ваше общее впечатление:</h2>
+            </div>
+            <label for="pt" class="checkbox-wrapper">
+              <input class="visually-hidden" id="pt" type="radio" name="radio-feeling" value="positive">
+              <span class="feeling-radio-indicator"></span>
+              Скорее положительное
+            </label>
+            <label for="nt" class="checkbox-wrapper">
+              <input class="visually-hidden" id="nt" type="radio" name="radio-feeling" value="negative">
+              <span class="feeling-radio-indicator"></span>
+              Скорее отрицательное
+            </label>
+            <label for="da" class="checkbox-wrapper">
+              <input class="visually-hidden" id="da" type="radio" name="radio-feeling" value="difficult-answer">
+              <span class="feeling-radio-indicator"></span>
+              Затрудняюсь ответить
+            </label>
+          </div>
+          <div class="landmarks">
+            <div class="legend-wrapper">
+              <h2 class="landmarks__title">Посещенные
+                <br> достопримечательности:</h2>
+            </div>
+            <div class="landmarks-wrapper">
+              <p class="landmarks-input-big-wrapper">
+                <label for="ch-1" class="landmarks-input-wrapper">
+                  <input class="visually-hidden" id="ch-1" name="checkbox-1" value="devil-bridge" type="checkbox">
+                  <span class="landmarks-checkbox-indicator">
+                    <svg width="23" height="16">
+                      <use xlink:href="#icon-tick"></use>
+                    </svg>
+                  </span>
+                  Мост Дьявола
+                </label>
+              </p>
+              <p class="landmarks-input-big-wrapper">
+                <label for="ch-2" class="landmarks-input-wrapper">
+                  <input class="visually-hidden" id="ch-2" name="checkbox-2" value="mountain-bell" type="checkbox">
+                  <span class="landmarks-checkbox-indicator">
+                    <svg width="23" height="16">
+                      <use xlink:href="#icon-tick"></use>
+                    </svg>
+                  </span>
+                  Гора-Колокол
+                </label>
+              </p>
+              <p class="landmarks-input-big-wrapper">
+                <label for="ch-3" class="landmarks-input-wrapper">
+                  <input class="visually-hidden" id="ch-3" name="checkbox-3" value="slide-park" type="checkbox">
+                  <span class="landmarks-checkbox-indicator">
+                    <svg width="23" height="16">
+                      <use xlink:href="#icon-tick"></use>
+                    </svg>
+                  </span>
+                  Слайд-парк
+                </label>
+              </p>
+              <p class="landmarks-input-big-wrapper">
+                <label for="ch-4" class="landmarks-input-wrapper">
+                  <input class="visually-hidden" id="ch-4" name="checkbox-4" value="red-rock" type="checkbox">
+                  <span class="landmarks-checkbox-indicator">
+                    <svg width="23" height="16">
+                      <use xlink:href="#icon-tick"></use>
+                    </svg>
+                  </span>
+                  Красные скалы
+                </label>
+              </p>
+            </div>
+          </div>
+          <div class="emotions">
+            <div class="legend-wrapper">
+              <h2 class="emotions__title">Опишите свои эмоции</h2>
+            </div>
+            <textarea name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+          <button class="btn-write-comment" type="submit">Отправить отзыв</button>
+          <p class="must">
+            <sup>*</sup>-обязательные поля
+          </p>
+        </form>
+      </div>
+    </main>
+    <footer class="main-footer inner-footer">
+      <div class="hashteg">
+        <span>&#35;visitSEDONA</span>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="social__link social__link--twitter">
+              Twitter
+              <svg width="18" height="14">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--facebook">
+              Facebook
+              <svg width="9" height="18">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--youtube">
+              youtube
+              <svg width="20" height="14">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">
+          Разработано
+          <a href="" class="copyright__link">
+            HTML ACADEMY
+            <svg width="27" height="34">
+              <use xlink:href="#icon-logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <div class="sprite-wrapper" style="display:none">
+      <include src="src/img/sprite.svg"></include>
+    </div>
+  </div>
+</body>
+
+</html>
